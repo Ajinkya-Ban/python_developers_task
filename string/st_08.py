@@ -1,10 +1,19 @@
-#isdigit()
+
+# isdigit()
+
 mobile = input("Enter the mobile number = ")
+
 if mobile == "":
-    print("please enter mobile")
+    print("Please enter mobile number")
+
 elif not mobile.isdigit():
-    print("Invalid mobile")
-elif len(mobile) != 10 and mobile[0] in "9876":
-    print("Not valid")
+    print("Invalid mobile number")
+
+elif len(mobile) != 10:
+    print("Mobile number must contain 10 digits")
+
+elif mobile[0] not in "9876":
+    print("Mobile number must start with 9, 8, 7, or 6")
+
 else:
-    print(mobile)
+    print("Valid mobile number:", mobile)
