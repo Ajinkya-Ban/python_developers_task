@@ -1,0 +1,6 @@
+n = int(input("ENTER YOUR AGE: "))
+
+if(n>=18):
+    print("YOU ARE ELIGIBLE FOR DRIVING LICENSE")
+else:
+    print("YOU ARE NOT ELIGIBLE FOR DRIVING LICENSE")
